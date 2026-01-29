@@ -5,6 +5,7 @@ import cors from 'cors'
 import connectDB from "./config/db.js"
 import AuthRoute from './routes/Auth.route.js'
 import CategoryRoute from './routes/Category.route.js'
+import BlogRoute from './routes/Blog.route.js'
 connectDB();
 dotenv.config()
 const PORT = process.env.PORT
@@ -16,6 +17,7 @@ app.use(cors())
 // route setup
 app.use('/api/auth',AuthRoute)
 app.use('/api/category',CategoryRoute)
+app.use('api/blog',BlogRoute)
 app.listen(PORT,()=>{
     console.log(`Server is running on PORT ${PORT}`)
 })
