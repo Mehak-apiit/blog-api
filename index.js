@@ -6,6 +6,8 @@ import connectDB from "./config/db.js"
 import AuthRoute from './routes/Auth.route.js'
 import CategoryRoute from './routes/Category.route.js'
 import BlogRoute from './routes/Blog.route.js'
+import CommentRoute from './routes/Comment.route.js'
+import BlogLikeRoute from './routes/BlogLike.route.js'
 connectDB();
 dotenv.config()
 const PORT = process.env.PORT
@@ -18,6 +20,7 @@ app.use(cors())
 app.use('/api/auth',AuthRoute)
 app.use('/api/category',CategoryRoute)
 app.use('api/blog',BlogRoute)
+
 app.listen(PORT,()=>{
     console.log(`Server is running on PORT ${PORT}`)
 })
