@@ -1,5 +1,5 @@
 import express from 'express'
-import {addcomment,commentCount,deleteComment,getAllComments,getAllComments, getComments} from '../controllers/Comment.controller.js'
+import {addcomment,commentCount,deleteComment,getAllComments, getComments} from '../controllers/Comment.controller.js'
 import {authenticate} from '../middleware/authenticate.js'
 
 const CommentRoute = express.Router()

@@ -45,7 +45,7 @@ export const commentCount = async(req,res,next)=> {
     }
 }
 //------------------------------------------------------------------------------------------------------
-export const getAllComments = async(res,res,next) =>{
+export const getAllComments = async(req,res,next) =>{
     try{
         const user = req.user
         let comments

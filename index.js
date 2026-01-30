@@ -20,6 +20,8 @@ app.use(cors())
 app.use('/api/auth',AuthRoute)
 app.use('/api/category',CategoryRoute)
 app.use('api/blog',BlogRoute)
+app.use('api/comment',CommentRoute)
+app.use('api/blog-like',BlogLikeRoute)
 
 app.listen(PORT,()=>{
     console.log(`Server is running on PORT ${PORT}`)
