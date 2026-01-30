@@ -4,7 +4,7 @@ dotenv.config()
 //configuration
 cloudinary.config({
     cloud_name: process.env.CLOUDINARY_APP_NAME,
-    api_key: process.env.API_KEY,
+    api_key: process.env.CLOUDINARY_API_KEY,
     api_secret: process.env.CLOUDINARY_API_SECRET
 });
 export default cloudinary
